@@ -174,7 +174,7 @@ void vPortStartFirstTask( void )
 /*
  * Arduino framework integration                // <-----------------------------------------------------
  */
-void (*rtosSysTick_Handler)(void);
+void (*rtosSysTick_Handler)(void) = 0;
 
 int sysTickHook(void) 
 {
